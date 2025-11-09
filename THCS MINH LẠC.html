@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trường THCS Minh Lạc</title>
+    <link rel="stylesheet" href="thcs.css">
+</head>
+<script>
+const btn = document.getElementById("themeBtn");
+
+// Khi nhấn nút, đổi theme và cập nhật biểu tượng
+btn.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+
+  if (document.body.classList.contains("dark-mode")) {
+    btn.textContent = "☀️ Chế độ sáng";
+  } else {
+    btn.textContent = "🌙 Chế độ tối";
+  }
+});
+</script>
+<body>
+    <button id="toggle-btn" onclick="toggleTheme()">🌙 Quá khó để thấy? Chế độ tối</button>
+    <header>
+        <h1>TRƯỜNG THCS MINH LẠC</h1>
+        <nav>
+            <ul>
+                <li><a href="#trang-chu">Trang chủ</a></li>
+                <li><a href="#gioi-thieu">Giới thiệu</a></li>
+                <li><a href="#thanh-tich">Thành tích</a></li>
+                <li><a href="#tin-tuc">Tin tức</a></li>
+                <li><a href="#lien-he">Liên hệ</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    <section id="trang-chu">
+        <h2>Chào mừng đến với Trường THCS Minh Lạc</h2>
+        <div class="textbox">
+            <p>Trường THCS Minh Lạc có địa chỉ tại thôn Yên Lạc, xã Cẩm Lạc, tỉnh Hà Tĩnh. Tự hào là một trong những ngôi trường có bề dày truyền thống và thành tích xuất sắc trong công tác giáo dục và đào tạo.</p>
+        </div>
+    </section>
+    <section id="gioi-thieu">
+        <h2>Giới thiệu về trường</h2>
+        <div class="textbox">
+            <p>Trường THCS Minh Lạc là một trong những cơ sở giáo dục uy tín, luôn đặt chất lượng đào tạo và sự phát triển toàn diện của học sinh lên hàng đầu. Với đội ngũ giáo viên giàu kinh nghiệm, tâm huyết cùng môi trường học tập hiện đại, thân thiện, nhà trường không ngừng đổi mới phương pháp giảng dạy nhằm phát huy tối đa năng lực của từng học sinh.
+Ngoài chương trình học chính khóa, trường còn chú trọng đến các hoạt động ngoại khóa, kỹ năng sống, và giáo dục đạo đức, giúp học sinh phát triển toàn diện cả về trí tuệ, thể chất lẫn tinh thần.
+Với phương châm “Hiền tài là nguyên khí quốc gia”, trường THCS Minh Lạc luôn là nơi chắp cánh cho những ước mơ, là điểm đến tin cậy của các bậc phụ huynh và học sinh.</p>
+        </div>
+    </section>
+
+    <section id="thanh-tich">
+        <h2>Thành tích nổi bật</h2>
+        <div class="textbox">
+            <ul>
+                <li>Nhiều giải thưởng trong các kỳ thi học sinh giỏi cấp tỉnh</li>
+                <li>Đạt chuẩn kiểm định chất lượng giáo dục</li>
+                <li>Học sinh đạt thành tích xuất sắc trong các hoạt động thể thao và văn nghệ</li>
+                <li>Được công nhận là trường học thân thiện, học sinh tích cực</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="tin-tuc">
+        <h2>Tin tức - Sự kiện</h2>
+        <div class="tin-tuc-grid">
+            <article>
+                <img src="https://scontent.fhan5-8.fna.fbcdn.net/v/t39.30808-6/497519262_1276859587779014_1229724043013049812_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=108&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=024kRlYBpqEQ7kNvwESD2bp&_nc_oc=Adlz2OcGj38bX_mvST5ixoe0C0jIu21YMnWA4C55-bGmv-Dh758AO4tUkUkyi8sbaAQ&_nc_zt=23&_nc_ht=scontent.fhan5-8.fna&_nc_gid=xmnzGpet7G0e4TDwlAOuyg&oh=00_AfirAI_9s3QaJ_NHQvj9rFx4YToJHfI3nfdEXAY1FQIbtQ&oe=6914D687">
+                <h3>Đại hội cháu ngoan bác Hồ xã Cẩm Lạc năm học 2024-2025</h3>
+                <img src="https://scontent.fhan5-10.fna.fbcdn.net/v/t39.30808-6/557612422_1405161974948774_2046661319118410113_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=6GpvU_BZujcQ7kNvwFpD-7W&_nc_oc=AdlaKieMu8F-oww1sJUR18WpWwYTHmC2cofSrPP0uTgQ8FqQwtXi4Bt_C2z_k6FnB-E&_nc_zt=23&_nc_ht=scontent.fhan5-10.fna&_nc_gid=LRoy7-ENyS3Df9wzUFa-LA&oh=00_Afib9YrZ7g9M9hg-5KbFZr8qk-aGd-OVIz5TVOAQTw545A&oe=6914F24B">
+                <h4>Đại hội Liên đội Trường năm học 2025-2026</h4>
+            </article>
+        </div>
+    </section>
+
+    <section id="hoat-dong">
+        <h2>🎉Hoạt động ngoại khóa🎉</h2>
+        <div class="textbox">
+            <p>Các hoạt động ngoại khóa phong phú giúp học sinh phát triển toàn diện:</p>
+            <ul>
+                <li>Câu lạc bộ văn nghệ</li>
+                <li>Đội tuyển thể thao</li>
+                <li>Hoạt động tình nguyện</li>
+                <li>Tuyên truyền về an toàn giao thông</li>
+            </ul>
+        </div>
+    </section>
+</main>
+
+    <footer id="lien-he">
+        <div>
+            <h5>Thông tin liên hệ:</h5>
+            <p>📍Địa chỉ: Thôn Yên Lạc - Xã Cẩm Lạc - Tỉnh Hà Tĩnh - Việt Nam</p>
+            <p>📞Điện thoại: [Số điện thoại]</p>
+            <p>📧Email: thcsminhlac@gmail.com</p>
+            <p><a href="https://www.facebook.com/thcsminhlaccamxuyenhatinh/">Mở Facebook</a></p>
+        </div>
+    </footer>
+
+<script>
+function toggleTheme() {
+  document.body.classList.toggle("dark-mode");
+  const icon = document.getElementById("toggle-icon");
+  if (document.body.classList.contains("dark-mode")) {
+    icon.src = "moon.png";
+  } else {
+    icon.src = "sun.png";
+  }
+}
+</script>
+</body>
+</html>
